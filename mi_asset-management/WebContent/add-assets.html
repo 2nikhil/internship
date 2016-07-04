@@ -1,0 +1,111 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		Add and delete
+	</title>
+
+	<script src="js/jquery-3.0.0.min.js"></script>
+<script src="js/bootstrap.min.js" ></script>
+<script src="js/mi_asset-management.js"></script>
+<link rel="stylesheet"  href="css/bootstrap.min.css">
+
+<link rel="stylesheet" type="text/css" href="css/add-assets.css">
+</head>
+<body>
+
+ 
+     <h1  style='padding-left : 400px;display: inline-block;'> Create a new device</h1>
+
+<form method="post" action="http://localhost:8080/mi_asset-management/rest/assets">
+<h3 class="header"> Asset details </h3>
+<div class="contents">
+
+<p>
+<label>Asset number: </label>   <input type="text"  class="input" name="assetnumber">
+</p>
+
+<p>
+<label>Color: </label>          <input type="text"  class="input" name="color" >
+</p>
+
+<!--
+<p>
+<label>device purchase date:</label> <input type="text"  class="input" name="device_purchasedate">
+</p>
+-->
+
+<p>
+<label>Is headquarters device:</label> <input type="text"   class="input" name="isheadquarters">
+</p>
+</div>
+
+<br>
+<br>
+
+<h3 class="header" >Device Status</h3>
+<div class="contents">
+
+<p>
+<label>Allowed upgrade or not :</label> <input type="text" class="input" name="allowedupgradeornot">
+</p>
+
+<p>
+<label>device type: </label> <input type="text"  class="input" name="devicetype">
+</p>
+
+<p>
+<label>is rooted or jail broken device:</label> <input type="text"  class="input" name="isrootedorjailbroken">
+</p>
+
+<p>
+<label>department</label><input type="text" class="input" name="department">
+</p>
+
+</div>
+
+
+<br>
+<br>
+
+<h3 class="header"> Manufaturer details</h3>
+<div class="contents">
+
+<p>
+<label>manufacturer: </label> <input type="text"  class="input" name="manufacturer">
+</p>
+
+<p>
+<label>MDI_no:</label> <input type="text"  class="input" name="MDT_no">
+</p>
+
+<p>
+<label>model_no: </label> <input type="text"  class="input" name="modelnumber">
+</p>
+
+<p>
+<label>IMEI:</label> <input type="text"  class="input" name="IMEI">
+</p>
+
+
+</div>
+
+<h3 class="header"> Comments </h3>
+<textarea rows='10' cols='70' id="text-comments" name="comments">
+	
+</textarea>
+<br>
+<br>
+<!--<button type="button" class="btn btn-success btn-lg" id="submit">Submit</button> -->
+
+<input type="submit" value="submit" class="button">
+
+<br>
+<br>
+
+</form>
+
+
+</body>
+</html>

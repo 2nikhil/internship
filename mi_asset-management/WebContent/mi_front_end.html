@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<script src="js/jquery-3.0.0.min.js"></script>
+<script src="js/bootstrap.min.js" ></script>
+<script src="js/mi_asset-management.js"></script>
+<link rel="stylesheet"  href="css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="css/mi_front_end.css">
+
+ 
+
+	<title>Asset Management</title>
+</head>
+<body onload="getrequest()">
+<div class="container">
+<h3 style='padding-left : 400px;display: inline-block;'> Welcome to assets management </h3>
+ <script src="js/mi_asset-management.js"></script>
+<input type="text" name="search" placeholder="Search.." style='margin-top: 20px'>
+
+ <select name="cars" id="dropdown" style='margin-top: 20px;display: block'>
+  
+    <option value="assetnumber">Fiat</option>
+    <option value="color">Audi</option>
+  </select>
+
+
+<br><br><br>
+
+<br>
+<br>
+<p id="heading">Displaying all currently available devices</p>
+<input type="button" value="DELETE" class="button" name="delete" id="delete" onclick="delete_request()">
+<input type="button" value="ADD" class="button" id="add_button" >
+
+<script type="text/javascript">
+    document.getElementById("add_button").onclick = function () {
+        location.href = "file:///C:/Users/intern/workspace/mi_asset-management/WebContent/add-assets.html";
+    };
+</script>
+
+
+
+
+
+  <table class="table table-bordered" id="fill">
+    <thead >
+      
+      <tr>
+
+        <th>Asset Number</th>
+        <th>allowed upgrade</th>
+        <th>color</th>
+        
+      </tr>
+    </thead>
+    <tbody >
+   
+    </tbody>
+  </table>
+</div>
+
+</body>
+</html>
